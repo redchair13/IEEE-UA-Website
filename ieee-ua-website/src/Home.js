@@ -9,7 +9,6 @@ import darkModeIcon from './icons/darkModeIcon.svg';
 
 function Home() {
   const [darkMode, setDarkMode] = useState(false);
-  const [date, setDate] = useState(new Date());
 
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
