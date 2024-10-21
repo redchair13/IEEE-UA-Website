@@ -21,10 +21,6 @@ function Home() {
     }
   };
 
-  const onDateChange = (newDate) => {
-    setDate(newDate);
-  };
-
   return (
     <div>
       <header>Navbar goes here:</header>
