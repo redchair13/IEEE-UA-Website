@@ -21,22 +21,11 @@ function Home() {
     }
   };
 
-  const onDateChange = (newDate) => {
-    setDate(newDate);
-  };
-
   return (
     <div>
-      <header>Navbar goes here:</header>
-
+      {/* <header>Navbar goes here:</header> */}
+      <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
       <br></br><br></br>
-
-      <img
-        src={darkMode ? lightModeIcon : darkModeIcon}
-        alt="Toggle mode"
-        onClick={toggleDarkMode}
-        style={{ cursor: 'pointer', width: '30px', height: '30px' }}
-      />
 
       <p>Join Us!</p>
       <button>EMAIL LIST</button>
