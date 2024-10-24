@@ -7,7 +7,7 @@ import logo1 from './icons/logo1.png';
 
 export default function Navbar({darkMode, toggleDarkMode}) {
   return (
-    <nav className="navbar">
+    <nav className={`navbar ${darkMode ? 'dark' : 'light'}`}>
       <ul>
         <li className = "left"><a href ="/home.js">
           <img src = {logo1} alt = "IEEE" className = "logo"/></a></li>

@@ -3,10 +3,19 @@
     margin: 0;
     padding: 20px;
 }
+
+.navbar.light{
+    background-color: rgba(55,17,84,255);
+}
+
+.navbar.dark{
+    background-color: black;
+}
 body{
     margin: 0;
     padding: 0;
 }
+
 ul{
     list-style: none;
     display: flex;
@@ -28,8 +37,8 @@ li a{
 .left {
     margin-right:auto;
 }
+
 .logo{
-    /* font-size: 65px; */
     width: auto;
 }
 
