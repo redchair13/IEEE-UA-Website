@@ -24,7 +24,7 @@ const Layout = () => {
             {/* <header>Navbar goes here:</header> */}
             <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
             <Outlet />
-            <footer>Footer goes here:</footer>
+            <Footer darkMode={darkMode}/>
         </div>
       </>
     );

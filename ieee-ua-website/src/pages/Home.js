@@ -10,10 +10,7 @@ function Home() {
   }, []);
   return (
 
-    <div>
-      
-      <br></br><br></br>
-
+    <div className="page-container">
       <p>Join Us!</p>
       <button>EMAIL LIST</button>
       <a href="https://discord.gg/tpzjghvd" target="_blank" rel="noopener noreferrer">
@@ -22,15 +19,8 @@ function Home() {
       <a href="https://myinvolvement.org/organization/ieee" target="_blank" rel="noopener noreferrer">
         <button>MY INVOLVEMENT</button>
       </a>
-
-      <br></br><br></br>
-
       <p>Our Events</p>
-
-      <br></br><br></br>
-
-      
-    </div>
+      </div>
   );
 }
 
