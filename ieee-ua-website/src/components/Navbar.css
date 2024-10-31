@@ -1,0 +1,48 @@
+.navbar{
+    background-color: rgba(55,17,84,255);
+    margin: 0;
+    padding: 20px;
+}
+
+.navbar.light{
+    background-color: rgba(55,17,84,255);
+}
+
+.navbar.dark{
+    background-color: black;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+li a{
+   color: rgba(255,205,0,255);
+   font-size: 30px;
+   padding-right: 25px;
+   font-weight: bold;
+   text-align: center;
+   text-decoration: none;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+.left {
+    margin-right:auto;
+}
+
+.logo{
+    width: auto;
+}
+
+img{
+ height: 65px;
+ width: 45px;
+}

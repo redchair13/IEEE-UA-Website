@@ -1,0 +1,106 @@
+div {
+    text-align: center;
+  }
+  
+  body.light-mode {
+    background-color: rgba(255,255,255,255);
+    color: black;
+  }
+  
+  body.dark-mode {
+    background-color: rgba(24,24,24,255);
+    color: white;
+  }
+  
+  button {
+    border: none;
+    padding: 10px 20px;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 15px;
+    border-radius: 10px;
+  }
+  
+  body.light-mode button {
+    background-color: rgba(255,205,0,255);
+    color: black;
+  }
+  
+  body.dark-mode button {
+    background-color: rgba(55,17,84,255);
+    color: white;
+  }
+
+  .page{
+    display: flex;
+    flex-direction: column;
+  }
+  .board-container{
+    display: flex;
+    width: 100%;
+    height: 600px;
+    flex: 1;
+  }
+  .top-pic{
+    background-size: cover;
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+  }
+  .title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: rgba(255,205,0,255);
+    font-size: 65px;
+    transform: translate(-50%, -50%); 
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+ 
+  button {
+    margin-top: 30px;
+    border: none;
+    padding: 10px 20px;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 15px;
+    border-radius: 10px;
+  }
+  
+  body.light-mode button {
+    background-color: rgba(255,205,0,255);
+    color: black;
+  }
+  
+  body.dark-mode button {
+    background-color: rgba(55,17,84,255);
+    color: white;
+  }
+  
+  .board-members{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0;
+    column-gap: 70px;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-bottom: 80px;
+  }
+  .member{
+    padding: 10px;
+    text-align: center;
+  }
+
+  .member img {
+    width: 100px; 
+    height: 100px; 
+    border-radius: 50%; 
+ 
+  }
+  .member:hover {
+    transform: scale(1.05); 
+  }
