@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import YoutubeLogo from '../images/youtube.svg'
-import DiscordLogo from '../images/discord.svg'
-import LinkedInLogo from '../images/linkedin.svg'
-import InstagramLogo from '../images/instagram.svg'
-import IEEELOGO from '../images/ieeelogo.png'
+import YoutubeLogo from '../icons/logo-youtube.svg'
+import DiscordLogo from '../icons/logo-discord.svg'
+import LinkedInLogo from '../icons/logo-linkedin.svg'
+import InstagramLogo from '../icons/logo-instagram.svg'
+import IEEELOGO from '../icons/logo1.png'
 import './Footer.css';
 
 export default function Footer({darkMode}) {
