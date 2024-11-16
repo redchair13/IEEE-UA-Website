@@ -2,6 +2,7 @@ import React from 'react';
 import './Board.css';
 import board from '../icons/board.jpg';
 import member from '../icons/member.jpg';
+import empty from '../icons/empty.jpg';
 import data from '../data/Members.json';
 import { useState } from 'react';
 import { useEffect } from 'react';
@@ -14,8 +15,9 @@ function Board() {
   const [filteredMembers, setFilteredMembers] = useState([]);
   
   useEffect(() => {
-    const filtered = data.filter(
-      (member) => member.start === parseInt(year) && member.startSemester === semester
+    const filtered = data.filter((member) => 
+      (member.startSemester === semester && member.start === parseInt(year)) || 
+      (semester === "spring" && member.end === parseInt(year) && member.start !== parseInt(year))
     );
     setFilteredMembers(filtered);
   }, [year, semester]);
@@ -33,7 +35,6 @@ function Board() {
       <br></br><br></br>
       </div>
       <div className ='button-lay'>
-        <label htmlFor='year'></label>
         <select id='year' onChange={(e) => setYear(e.target.value)}>
           <option disabled selected>Year</option>
           <option value="2024">2024</option>
@@ -45,50 +46,49 @@ function Board() {
           <option value="2018">2018</option>
           <option value="2017">2017</option>
         </select>
-        <label htmlFor='semester'></label>
         <select id='semester' onChange={(e) => setSemester(e.target.value)}>
-        <option disabled selected>Fall/Spring</option>
+        <option disabled selected>Semester</option>
         <option value="fall">Fall</option>
         <option value="spring">Spring</option>
         </select>
       </div>
       <br></br><br></br>
 
-      <h2>Eboard</h2>
+      <h2>E-board</h2>
       <div className = 'board-members'>
         {Eboard.map((member) => (
           <div className = 'member'>
-            <img src={member.image}/>
+            <img src={member.image || empty}/>
             <p>{member.name}<br />{member.position}</p>
           </div>
         ))}
       </div>
 
-      <h2>Dboard</h2>
+      <h2>D-board</h2>
       <div className = 'board-members'>
         {Dboard.map((member) => (
           <div className = 'member'>
-            <img src={member.image}/>
+            <img src={member.image || empty}/>
             <p>{member.name}<br />{member.position}</p>
           </div>
         ))}
       </div>
 
-      <h2>Jboard</h2>
+      <h2>J-board</h2>
       <div className = 'board-members'>
         {Jboard.map((member) => (
           <div className = 'member'>
-            <img src={member.image}/>
+            <img src={member.image || empty} />
             <p>{member.name}<br />{member.position}</p>
           </div>
         ))}
       </div>
 
-      <h2>Tboard</h2>
+      <h2>T-board</h2>
       <div className = 'board-members'>
         {Tboard.map((member) => (
           <div className = 'member'>
-            <img src={member.image}/>
+            <img src={member.image || empty}/>
             <p>{member.name}<br />{member.position}</p>
           </div>
         ))}
