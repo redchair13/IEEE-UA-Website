@@ -29,13 +29,13 @@ function Board() {
 
   return (
     <div className = 'page'>
-      <div className = 'board-container'>
-      <img src={board} className = 'top-pic' />
+      <div className="header-container">
+        <img src={board} className="header-background-image" alt="header" />
       <h1 className = "title">OUR BOARD</h1>
       <br></br><br></br>
       </div>
       <div className ='button-lay'>
-        <select id='year' onChange={(e) => setYear(e.target.value)}>
+        <select id='year' onChange={(e) => setYear(e.target.value)} value ={year}>
           <option disabled selected>Year</option>
           <option value="2024">2024</option>
           <option value="2023">2023</option>
@@ -46,7 +46,7 @@ function Board() {
           <option value="2018">2018</option>
           <option value="2017">2017</option>
         </select>
-        <select id='semester' onChange={(e) => setSemester(e.target.value)}>
+        <select id='semester' onChange={(e) => setSemester(e.target.value)} value ={semester}>
         <option disabled selected>Semester</option>
         <option value="fall">Fall</option>
         <option value="spring">Spring</option>
