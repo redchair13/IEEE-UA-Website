@@ -1,134 +1,311 @@
 div {
-    text-align: center;
+  text-align: center;
+}
+
+body.light-mode {
+  background-color: rgba(255,255,255,255);
+  color: black;
+}
+
+body.dark-mode {
+  background-color: rgba(24,24,24,255);
+  color: white;
+}
+
+.page{
+  display: flex;
+  flex-direction: column;
+}
+
+.header-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 700px;
+  overflow: hidden;
+}
+
+.header-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(55, 17, 84, 40%);
+  width: 100%;
+  height: 800px;
+  z-index: 1;
+}
+
+.header-background-image {
+  position: absolute;
+  background-size: contain;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index:0;
+}
+.title{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: rgba(255,205,0,255);
+  font-size: 75px;
+  transform: translate(-50%, -50%); 
+  font-weight: bolder;
+  font-family: Arial, Helvetica, sans-serif;
+  z-index: 2;
+}
+
+h2{
+text-align: center;
+font-weight: bold;
+font-family: Arial, Helvetica, sans-serif;
+}
+.board-members{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0;
+  gap: 70px;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+
+.board-members > .member:only-child {
+  grid-column: 2 / 3; /* Place the single item in the middle column */
+  justify-self: center; /* Ensure the item itself is centered within the column */
+}
+
+
+.member{
+  padding: 10px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.member img {
+  width: 100px; 
+  height: 100px; 
+  border-radius: 50%; 
+
+}
+.member:hover {
+  transform: scale(1.05); 
+}
+
+.button-lay{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+option:hover{
+  background-color: rgba(255,205,0,255);
+}
+
+#year, #semester{
+  appearance: none;
+  width: 120px;
+  text-align: center;
+  background-color: rgba(255,205,0,255);
+  border: none;
+  padding: 10px 0;
+  color: black;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 10px;
+  margin-top: 30px;
+  border-radius: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#year option, #semester option{
+  background-color: white;
+  width: 10px;
+  text-align: center;
+  display: block;
+}
+
+  .card-box
+  {
+      position: relative;
+      width: 500px;
+      height: 500px;
+      border: .25rem solid black;
+      background-color: rgba(55,17,84,255);
+      z-index: 4;
   }
-  
-  body.light-mode {
-    background-color: rgba(255,255,255,255);
-    color: black;
-  }
-  
-  body.dark-mode {
-    background-color: rgba(24,24,24,255);
-    color: white;
-  }
- 
-  .page{
-    display: flex;
-    flex-direction: column;
-  }
- 
-  .header-container {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 700px;
-    overflow: hidden;
-  }
-  
-  .header-container::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    background-color: rgba(55, 17, 84, 40%);
-    width: 100%;
-    height: 800px;
-    z-index: 1;
-  }
-  
-  .header-background-image {
-    position: absolute;
-    background-size: contain;
-    background-position: center;
+  .card-container
+{
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    z-index:0;
-  }
-  .title{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    color: rgba(255,205,0,255);
-    font-size: 75px;
-    transform: translate(-50%, -50%); 
-    font-weight: bolder;
-    font-family: Arial, Helvetica, sans-serif;
-    z-index: 2;
-  }
-
- h2{
-  text-align: center;
-  font-weight: bold;
-  font-family: Arial, Helvetica, sans-serif;
- }
-  .board-members{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    padding: 0;
-    gap: 70px;
-    max-width: 600px;
-    margin: 0 auto;
-    margin-bottom: 80px;
-  }
-
-  .board-members > .member:only-child {
-    grid-column: 2 / 3; /* Place the single item in the middle column */
-    justify-self: center; /* Ensure the item itself is centered within the column */
-  }
-
-
-  .member{
-    padding: 10px;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-
-  .member img {
-    width: 100px; 
-    height: 100px; 
-    border-radius: 50%; 
- 
-  }
-  .member:hover {
-    transform: scale(1.05); 
-  }
-
-  .button-lay{
-    width: 100%;
-    display: flex;
+    background-color: rgba(0, 0, 0, 0.75);    
+    position: fixed;
+    display:flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-  }
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
 
-  option:hover{
-    background-color: rgba(255,205,0,255);
-  }
-  
-  #year, #semester{
-    appearance: none;
-    width: 120px;
-    text-align: center;
-    background-color: rgba(255,205,0,255);
-    border: none;
-    padding: 10px 0;
-    color: black;
-    font-size: 16px;
+.exit
+{
+    background-color: rgb(255, 0, 0);
+    font-weight: bold;
+    font-size: 1rem;
+    width: 4rem;
     cursor: pointer;
-    margin: 10px;
-    margin-top: 30px;
-    border-radius: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-  }
+    position: absolute;
+    right: -.25rem;
+    top: -0.2rem;
+    border-left: .25rem solid black;
+    border-right: .25rem solid black;
+    border-top: .25rem solid black;
+    border-bottom: .25rem solid black;
+}
 
-  #year option, #semester option{
-    background-color: white;
-    width: 10px;
+.board-image
+{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin: 1em;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+
+.board-image img
+{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    margin: 0;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+.member-name
+{ 
+    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    display: block;
-  }
-  
+    font-size: 35px;
+    color: rgba(255,205,0,255);
+}
+
+.position
+{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 35px;
+    padding-left: .25rem;
+    padding-right: .25rem;
+    color: rgba(255,205,0,255);
+}
+
+.board-githubbutton
+    {
+        position: absolute;
+        right: 5rem;
+        top: 18rem;
+        cursor: pointer;
+        background-color: black;
+        color: white;
+        width: 7.81rem;
+        height: 3.13rem;
+        margin-top: 15%;
+    }
+
+    .board-linkedinbutton
+    {
+        position: absolute;
+        left: 5rem;
+        top: 18rem;
+        cursor: pointer;
+        background-color: royalblue;
+        color: white;
+        width: 7.81rem;
+        height: 3.13rem;
+        margin-top: 15%;
+    }
+
+    
+    @media screen and (max-width: 600px)
+    {
+        .board-githubbutton
+        {
+            position: absolute;
+            transform: translateX(-50%);
+            left: 50%;
+            top: 24rem;
+            cursor: pointer;
+            background-color: black;
+            color: white;
+            width: 7.81rem;
+            height: 3.13rem;
+        }
+    
+        .board-linkedinbutton
+        {
+            position: absolute;
+            transform: translateX(-50%);
+            left: 50%;
+            top: 20rem;
+            cursor: pointer;
+            background-color: royalblue;
+            color: white;
+            width: 7.81rem;
+            height: 3.13rem;
+        }
+    }
+    
+    .board-githubimg
+    {
+        height: 75%;
+        position: absolute;
+        transform: translateY(-50%);
+        left: 8%;
+        top: 50%;
+    }
+    
+    .board-githubname
+    {
+        left: 52%;
+        top: 20%;
+        position: absolute;
+        transform: translateY(-50%);
+    }
+    
+    .board-linkedinimg
+    {
+        height: 75%;
+        position: absolute;
+        transform: translateY(-50%);
+        left: 8%;
+        top: 50%;
+    }
+    
+    .board-linkedinname
+    {
+        left: 52%;
+        top: 20%;
+        position: absolute;
+        transform: translateY(-50%);
+    }
+    
+    @keyframes charge
+    {
+        0%{border: .25rem solid rgb(172, 112, 0);}
+        100%{border: .25rem solid rgb(255, 230, 0);}    
+    }
