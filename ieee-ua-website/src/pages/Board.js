@@ -4,7 +4,7 @@ import board from '../icons/board.jpg';
 import empty from '../icons/empty.jpg';
 import data from '../data/Members.json';
 import Github from '../icons/github.png';
-import Linkedin from '../icons/linkedin.png';
+import LinkedInLogo from '../icons/logo-linkedin.svg'
 import { useState } from 'react';
 import { useEffect } from 'react';
 
@@ -116,13 +116,11 @@ function Board() {
           <div className='board-githubbutton'>
             <a href={selectedMember.github} target="_blank">
               <img className = "board-githubimg" src = {Github} alt = "Github"/>
-              <p className = "board-githubname">github</p>
             </a>
             </div>
           <div className='board-linkedinbutton'>
             <a href={selectedMember.linkedin || "https://www.linkedin.com/company/ieeeualbany/"} target="_blank">
-              <img className = "board-linkedinimg" src = {Linkedin} alt = "LinkedIn"/>
-              <p className = "board-linkedinname">linkedin</p>
+              <img className = "board-linkedinimg" src = {LinkedInLogo} alt = "LinkedIn"/>
             </a>
             </div>
         </div>

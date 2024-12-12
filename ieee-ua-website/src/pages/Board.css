@@ -69,8 +69,8 @@ font-family: Arial, Helvetica, sans-serif;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   padding: 0;
-  gap: 70px;
-  max-width: 600px;
+  gap: 90px;
+  max-width: 800px;
   margin: 0 auto;
   margin-bottom: 80px;
 }
@@ -88,8 +88,8 @@ font-family: Arial, Helvetica, sans-serif;
 }
 
 .member img {
-  width: 100px; 
-  height: 100px; 
+  width: 175px; 
+  height: 175px; 
   border-radius: 50%; 
 
 }
@@ -155,9 +155,9 @@ option:hover{
     z-index: 3;
 }
 
-.exit
+.card-box .exit
 {
-    background-color: rgb(255, 0, 0);
+    background-color: rgba(255,205,0,255);
     font-weight: bold;
     font-size: 1rem;
     width: 4rem;
@@ -169,6 +169,8 @@ option:hover{
     border-right: .25rem solid black;
     border-top: .25rem solid black;
     border-bottom: .25rem solid black;
+    z-index: 5;
+    color: black;
 }
 
 .board-image
@@ -217,30 +219,116 @@ option:hover{
 .board-githubbutton
     {
         position: absolute;
-        right: 5rem;
+        right: 7rem;
         top: 18rem;
         cursor: pointer;
-        background-color: black;
-        color: white;
-        width: 7.81rem;
-        height: 3.13rem;
-        margin-top: 15%;
+        width: 100px;
+        height: 100px;
+        margin-top: 10%;
     }
 
     .board-linkedinbutton
     {
         position: absolute;
-        left: 5rem;
+        left: 7rem;
         top: 18rem;
         cursor: pointer;
-        background-color: royalblue;
-        color: white;
-        width: 7.81rem;
-        height: 3.13rem;
-        margin-top: 15%;
+        width: 100px;
+        height: 100px;
+        margin-top: 10%;
+        border-radius: 15px; 
+        overflow: hidden; 
     }
 
+    .board-githubimg
+    {
+        height: 73px;
+        width: 73px;
+        position: absolute;
+        background-color: rgba(255,205,0,255);
+        transform: translateY(-50%);
+        left: 8%;
+        top: 50%;
+        border-radius: 10px;
+    }
     
+    .board-linkedinimg
+    {
+        height: 85px;
+        width: 85px;
+        position: absolute;
+        transform: translateY(-50%);
+        left: 8%;
+        top: 50%;
+    }
+
+
+
+    /* Extra Small Devices (phones, < 600px) */
+@media screen and (max-width: 600px) {
+  .board-members {
+      grid-template-columns: repeat(2, 1fr); 
+      gap: 20px; 
+  }
+
+  .member img {
+      width: 105px; /* Smaller images */
+      height: 105px;
+  }
+
+  .card-box {
+      width: 90%; 
+      height: auto; 
+  }
+}
+
+/* Small Devices (tablets, 600px to 768px) */
+@media screen and (min-width: 600px) and (max-width: 768px) {
+  .board-members {
+      grid-template-columns: repeat(2, 1fr); /* Two columns for tablets */
+      gap: 40px;
+  }
+
+  .member img {
+      width: 150px;
+      height: 150px;
+  }
+
+  .card-box {
+      width: 400px; 
+      height: auto;
+  }
+}
+
+/* Medium Devices (small desktops, 768px to 1024px) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .board-members {
+      grid-template-columns: repeat(3, 1fr); 
+      gap: 60px;
+  }
+
+  .member img {
+      width: 175px; /* Default size */
+      height: 175px;
+  }
+}
+
+/* Large Devices (desktops, > 1024px) */
+@media screen and (min-width: 1024px) {
+  .board-members {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 100px;
+      max-width: 1200px;
+  }
+
+  .member img {
+    width: 200px; 
+    height: 200px; 
+    border-radius: 50%; 
+  
+  }
+}
+
     @media screen and (max-width: 600px)
     {
         .board-githubbutton
@@ -251,7 +339,6 @@ option:hover{
             top: 24rem;
             cursor: pointer;
             background-color: black;
-            color: white;
             width: 7.81rem;
             height: 3.13rem;
         }
@@ -264,46 +351,13 @@ option:hover{
             top: 20rem;
             cursor: pointer;
             background-color: royalblue;
-            color: white;
             width: 7.81rem;
             height: 3.13rem;
         }
     }
     
-    .board-githubimg
-    {
-        height: 75%;
-        position: absolute;
-        transform: translateY(-50%);
-        left: 8%;
-        top: 50%;
-    }
     
-    .board-githubname
-    {
-        left: 52%;
-        top: 20%;
-        position: absolute;
-        transform: translateY(-50%);
-    }
-    
-    .board-linkedinimg
-    {
-        height: 75%;
-        position: absolute;
-        transform: translateY(-50%);
-        left: 8%;
-        top: 50%;
-    }
-    
-    .board-linkedinname
-    {
-        left: 52%;
-        top: 20%;
-        position: absolute;
-        transform: translateY(-50%);
-    }
-    
+  
     @keyframes charge
     {
         0%{border: .25rem solid rgb(172, 112, 0);}
