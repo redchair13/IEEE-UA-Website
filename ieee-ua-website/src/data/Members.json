@@ -743,8 +743,98 @@
         "startSemester": "spring",
         "start": 2024,
         "end": 2024,
+        "image": "/images/2024-2025/monzir.jpg",
+        "github": "",
+        "linkedin": "https://www.linkedin.com/in/monzir-mekki-a63043260"
+    },
+    {
+        "name": "Monzir Mekki",
+        "position": "Chair",
+        "branch": "eboard",
+        "startSemester": "fall",
+        "start": 2024,
+        "end": 2025,
+        "image": "/images/2024-2025/monzir.jpg",
+        "github": "",
+        "linkedin": "https://www.linkedin.com/in/monzir-mekki-a63043260"
+    },
+    {
+        "name": "Muwahid Seraj",
+        "position": "Vice Chair",
+        "branch": "eboard",
+        "startSemester": "fall",
+        "start": 2024,
+        "end": 2025,
+        "image": "/images/2024-2025/muwahid.jpg",
+        "github": "https://github.com/redchair13",
+        "linkedin": "https://www.linkedin.com/in/muwahid-seraj"
+    },
+    {
+        "name": "Daniel Diaz",
+        "position": "Secretary",
+        "branch": "eboard",
+        "startSemester": "fall",
+        "start": 2024,
+        "end": 2025,
+        "image": "/images/2024-2025/danny.jpg",
+        "github": "https://github.com/danield09",
+        "linkedin": "https://www.linkedin.com/in/daniel-diaz-137a00227"
+    },
+    {
+        "name": "Ava McCarthy",
+        "position": "Treasurer",
+        "branch": "eboard",
+        "startSemester": "fall",
+        "start": 2024,
+        "end": 2025,
+        "image": "/images/2024-2025/ava.jpg",
+        "github": "http://github.com/bigmaccar",
+        "linkedin": "https://www.linkedin.com/in/ava-mccarthy-a1aa06290/"
+    },
+    {
+        "name": "Ryan McSweeney",
+        "position": "Junior Chair",
+        "branch": "jboard",
+        "startSemester": "fall",
+        "start": 2024,
+        "end": 2025,
+        "image": "",
+        "github": "",
+        "linkedin": ""
+    },
+    {
+        "name": "Cole Brazinski",
+        "position": "Junior Vice Chair",
+        "branch": "jboard",
+        "startSemester": "fall",
+        "start": 2024,
+        "end": 2025,
+        "image": "",
+        "github": "",
+        "linkedin": ""
+    },
+    {
+        "name": "Jake Burleski",
+        "position": "Junior Treasurer",
+        "branch": "jboard",
+        "startSemester": "fall",
+        "start": 2024,
+        "end": 2025,
+        "image": "",
+        "github": "",
+        "linkedin": ""
+    },
+    {
+        "name": "Rueben Englelhart",
+        "position": "Junior Secretary",
+        "branch": "jboard",
+        "startSemester": "fall",
+        "start": 2024,
+        "end": 2025,
         "image": "",
         "github": "",
         "linkedin": ""
     }
+    
+    
 ]
