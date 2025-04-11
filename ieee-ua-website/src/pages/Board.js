@@ -11,7 +11,7 @@ import { useEffect } from 'react';
 
 function Board() {
   
-  const [year, setYear] = useState('2024');
+  const [year, setYear] = useState('2025');
   const [semester, setSemester] = useState('spring');
   const [filteredMembers, setFilteredMembers] = useState([]);
   const [isHidden, setIsHidden] = useState(true);
@@ -26,7 +26,6 @@ function Board() {
   }, [year, semester]);
 
   const Eboard = filteredMembers.filter(member => member.branch === 'eboard');
-  const Tboard = filteredMembers.filter(member => member.branch === 'tboard');
   const Dboard = filteredMembers.filter(member => member.branch === 'dboard');
   const Jboard = filteredMembers.filter(member => member.branch === 'jboard');
 
@@ -73,16 +72,6 @@ function Board() {
         ))}
       </div>
 
-      <h2>D-board</h2>
-      <div className = 'board-members'>
-        {Dboard.map((member) => (
-          <div className = 'member' onClick={() =>handleMemberClick(member)}>
-            <img src={member.image || empty}/>
-            <p>{member.name}<br />{member.position}</p>
-          </div>
-        ))}
-      </div>
-
       <h2>J-board</h2>
       <div className = 'board-members'>
         {Jboard.map((member) => (
@@ -92,10 +81,10 @@ function Board() {
           </div>
         ))}
       </div>
-
-      <h2>T-board</h2>
+      
+      <h2>D-board</h2>
       <div className = 'board-members'>
-        {Tboard.map((member) => (
+        {Dboard.map((member) => (
           <div className = 'member' onClick={() =>handleMemberClick(member)}>
             <img src={member.image || empty}/>
             <p>{member.name}<br />{member.position}</p>
