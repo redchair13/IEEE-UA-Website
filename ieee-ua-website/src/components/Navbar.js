@@ -15,6 +15,7 @@ export default function Navbar({darkMode, toggleDarkMode}) {
           <img src = {logo1} alt = "IEEE" className = "logo"/></Link>
           </li>
         <li><Link to="/board">BOARD</Link></li>
+        <li><Link to="/hackathon">HACKATHON</Link></li>
         <li><a href ="#">SERVER</a></li>
         <li>
         <img
