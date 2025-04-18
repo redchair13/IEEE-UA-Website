@@ -16,6 +16,7 @@ export default function Navbar({darkMode, toggleDarkMode}) {
           </li>
         <li><Link to="/board">BOARD</Link></li>
         <li><Link to="/hackathon">HACKATHON</Link></li>
+        <li><Link to="/gallery">GALLERY</Link></li>
         <li><a href ="#">SERVER</a></li>
         <li>
         <img

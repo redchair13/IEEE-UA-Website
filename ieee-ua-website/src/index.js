@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Layout from './pages/Layout';
 import Home from './pages/Home';
 import Board from './pages/Board';
+import Gallery from './pages/Gallery';
 import Hackathon from './pages/Hackathon';
 import reportWebVitals from './reportWebVitals';
 
@@ -15,6 +16,7 @@ root.render(
           <Route index element={<Home />} />
           <Route path = "board" element={<Board />} />
           <Route path = "hackathon" element={<Hackathon />} />
+          <Route path = "gallery" element={<Gallery />} />
         </Route>
         </Routes>
     </BrowserRouter>
