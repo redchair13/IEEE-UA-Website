@@ -912,17 +912,7 @@
         "github": "",
         "linkedin": ""
     },
-    {
-        "name": "Florian Charles",
-        "position": "Director of Partnerships & Devolpment",
-        "branch": "dboard",
-        "startSemester": "fall",
-        "start": 2024,
-        "end": 2025,
-        "image": "",
-        "github": "",
-        "linkedin": ""
-    },
+    
     {
         "name": "Fariya Hossain",
         "position": "Manager of ECE Society",
@@ -959,6 +949,17 @@
     {
         "name": "Zain Ahmed",
         "position": "Junior Director of CS Society",
+        "branch": "dboard",
+        "startSemester": "fall",
+        "start": 2024,
+        "end": 2025,
+        "image": "",
+        "github": "",
+        "linkedin": ""
+    },
+    {
+        "name": "Florian Charles",
+        "position": "Director of Partnerships & Devolpment",
         "branch": "dboard",
         "startSemester": "fall",
         "start": 2024,
