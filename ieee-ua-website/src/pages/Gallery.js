@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './Gallery.css'; // your CSS file
 
 function Gallery() {
-  const totalImages = 4; // or whatever number you have
+  const totalImages = 7; // or whatever number you have
 
   function getRandomImagePath() {
     const randomNumber = Math.floor(Math.random() * totalImages) + 1; // random 1~5

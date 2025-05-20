@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Layout from './pages/Layout';
 import Home from './pages/Home';
 import Board from './pages/Board';
-import ContactUs from './pages/Contactus';
+import ContactUs from './pages/ContactUs';
 import Gallery from './pages/Gallery';
 import Hackathon from './pages/Hackathon';
 import reportWebVitals from './reportWebVitals';
